@@ -13,15 +13,18 @@
   }
 }
 
-.App-header {
+.header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 5%;
+  /* font-size: 1.5em; */
+  
 }
 
 .App-link {
@@ -36,3 +39,29 @@
     transform: rotate(360deg);
   }
 }
+
+.main-flex {
+  display: flex;
+  text-align: center;
+}
+
+.Main-image {
+  /* height: 100%; */
+  margin: .5rem;
+  border-radius: 50% 20% / 10% 40%;
+  box-shadow: -2em -1em #1b1d24;
+  align-content: flex-end;
+
+}
+
+.header-text {
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 1.5em; 
+}
+
+.icon {
+  size: 3em; 
+  color: #537FC1
+}
+
