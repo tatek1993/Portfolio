@@ -4,7 +4,7 @@ import * as All from '../../node_modules/@fortawesome/fontawesome-free/css/all.c
 
 import Typed from 'typed.js';
 
-const Example = (props) => {
+const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -15,9 +15,9 @@ const Example = (props) => {
 
         var typed = new Typed(headerIntro.current, {
             strings: [
-                "I'm a Minneapolis-based<br/>  <span class='red'>Python lover</span>,",
+                "I'm a Minneapolis-based<br/>  <span class='red'>problem solver</span>,",
                 "I'm a Minneapolis-based<br/>  <span class='purple'>designer</span>,",
-                "I'm a Minneapolis-based<br/>  <span class='yellow'>problem solver</span>,",
+                "I'm a Minneapolis-based<br/>  <span class='yellow'>Python lover</span>,",
                 "I'm a Minneapolis-based<br/>  <span class='orange'>dad-joke connoisseur</span>,",
                 "I'm a Minneapolis-based<br/>  <span class='green'>Web Developer</span>."],
             smartBackspace: true,
@@ -39,7 +39,7 @@ const Example = (props) => {
                     </div>
                 </div>
 
-                <div class="dropdown">
+                <div class="dropdown border-box">
                     <div class="dropbtn"><i class="fas fa-angle-down" /> <i class="fas fa-folder icon" /> Portfolio</div>
                     <div class="dropdown-content">
                         <a href="#"><i class="fab fa-python blue" /> About Me</a>
@@ -57,4 +57,4 @@ const Example = (props) => {
 
     );
 }
-export default Example;
+export default Header;
