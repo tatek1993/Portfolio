@@ -21,7 +21,7 @@ const Header = (props) => {
                 "I'm a Minneapolis-based<br/>  <span class='orange'>dad-joke connoisseur</span>,",
                 "I'm a Minneapolis-based<br/>  <span class='green'>Web Developer</span>."],
             smartBackspace: true,
-            typeSpeed: 30,
+            typeSpeed: 25,
         });
     }, [])
 
@@ -30,7 +30,7 @@ const Header = (props) => {
         <div className="header">
             <div className="header-text-container">
                 <div>
-                    <h1 className="name"> Hi, I'm <span className="tate" >{'{'}</span>Tate<span className="tate" >{'}'}</span>.</h1>
+                    <h1 className="name"> Hi, I'm <span className="tate" >{'{'}</span> Tate <span className="tate" >{'}'}</span>.</h1>
                     <div className='header-text' >
                         <div className="header-typed">
                             <span ref={headerIntro} />

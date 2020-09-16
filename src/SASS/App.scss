@@ -3,11 +3,14 @@ $bar-grey: #8e98b8a8;
 $light-grey: #B4B7CB;
 $med-grey: #313340;
 $dark-grey: #252831;
+$hover: #414553;
 $blue: #537FC1;
 $green: #58C98B;
 $yellow: #E3CB48;
+$orange: #EEA667;
 $red: #E37E7C;
 $purple: #C291E2;
+$bright-blue: rgb(51, 140, 255);
 
 .App {
   text-align: center;
@@ -61,7 +64,7 @@ $purple: #C291E2;
   align-self: left;
 //   width: 70%;
   padding-left: 5rem;
-  border-left: 1px solid $bar-grey;
+  border-left: 2px solid $bar-grey;
 }
 
 .header {
@@ -154,35 +157,67 @@ $purple: #C291E2;
 
 .icon {
   size: 1.5em; 
-  color: rgb(51, 140, 255)
+  color: rgb(51, 140, 255);
 }
 
 .red {
-  color: #E37E7C
+  color: $red;
 }
 
 .purple {
-  color: #C291E2
+  color: $purple;
 }
 
 .yellow {
-  color: #F2DC62
+  color: $yellow;
 }
 
 .orange {
-  color: #EEA667
+  color: $orange;
 }
 
 .green {
-  color: #3AE085
+  color: $green;
 }
 
 .blue {
-  color: #537FC1
+  color: $blue;
+}
+
+.bright-blue {
+  color: $bright-blue;
+}
+
+.red-bg {
+  background-color: $red;
+}
+
+.purple-bg {
+  background-color: $purple;
+}
+
+.yellow-bg {
+  background-color: $yellow;
+}
+
+.orange-bg {
+  background-color: $orange;
+}
+
+.green-bg {
+  background-color: $green;
+}
+
+.blue-bg {
+  background-color: $blue;
+}
+
+.bright-blue-bg {
+  background-color: $bright-blue;
 }
 
 .dropbtn {
-  background-color: #282c34;
+  background-color: $med-grey;
   color: white;
   padding: 16px;
   border: none;
@@ -202,6 +237,7 @@ $purple: #C291E2;
   position: relative;
   display: inline-block;
   margin-top: 8%;
+  background-color: $med-grey;
   // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   // border: 1px solid #14161a;
 }
@@ -210,9 +246,9 @@ $purple: #C291E2;
 .dropdown-content {
   /* display: none; */
   /* position: absolute; */
-  background-color: #282c34;
+  // background-color: #282c34;
   margin: 0 0 5% 5%; 
-  border-left: 2px solid #8e98b8a8;
+  border-left: 2px solid $bar-grey;
   font-size: 1.5rem;
   
   
@@ -227,6 +263,29 @@ $purple: #C291E2;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #414553}
+.dropdown-content a:hover {background-color: $hover;}
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
 
+.skill {
+  padding: .5em;
+  margin: 1em;
+  border-radius: 10px;
+  
+  
+  &.alive {
+    color: white;
+    background-color: $blue;
+    
+  }
+
+  &.dead {
+    background-color: $med-grey;
+    color: $bar-grey;
+    border-color: $bar-grey;
+  }
+}
