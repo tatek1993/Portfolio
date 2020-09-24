@@ -59,7 +59,7 @@ $bg-color: #282c34;
 //   width: 70%;
   padding: 0 5rem;
   border-left: 2px solid $bar-grey;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(3px + 2vmin);
   line-height: 2rem;
 }
 
@@ -156,6 +156,7 @@ $bg-color: #282c34;
 .border-box {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border: 1px solid #14161a;
+  
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -198,13 +199,16 @@ $bg-color: #282c34;
   background-color: $med-grey;
   z-index: 20;
   flex-direction: column;
+  padding: 0 4rem;
+  margin: 0 3rem;
+  // border-top: 1px solid $bar-grey;
 }
 
 .skill {
   padding: .8rem;
   margin: 1.2rem;
   border-radius: 10px;
-  
+  font-size: calc(8px + 1vh);
   
   &.alive {
     color: white;
@@ -233,13 +237,14 @@ $bg-color: #282c34;
 
 .left-spacer {
   width: 3em;
-  border-bottom: 1px solid $bar-grey;
+  // border-bottom: 1px solid $bar-grey;
  
 }
 
 .right-spacer {
   min-width: 1em;
   flex: 1;
+  margin-right: 3rem;
   border-bottom: 1px solid $bar-grey;
 }
 
@@ -253,7 +258,7 @@ $bg-color: #282c34;
   border-bottom: 1px solid $bar-grey;
   color: $bar-grey;
   background-color: $bg-color;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   cursor: pointer;
   border-collapse: collapse;
   &:hover {
