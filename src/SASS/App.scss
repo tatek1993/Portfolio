@@ -36,7 +36,6 @@ $bg-color: #282c34;
   text-align: left;
   background-color: $med-grey; 
   color: white;
-  
   font-size: calc(10px + 2vmin);
   display: flex;
   flex-direction: column;
@@ -58,8 +57,10 @@ $bg-color: #282c34;
 .bio {
   align-self: left;
 //   width: 70%;
-  padding-left: 5rem;
+  padding: 0 5rem;
   border-left: 2px solid $bar-grey;
+  font-size: calc(8px + 2vmin);
+  line-height: 2rem;
 }
 
 // HEADER
@@ -252,7 +253,7 @@ $bg-color: #282c34;
   border-bottom: 1px solid $bar-grey;
   color: $bar-grey;
   background-color: $bg-color;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
   border-collapse: collapse;
   &:hover {
@@ -328,7 +329,7 @@ $bg-color: #282c34;
 }
 
 .blue-bg {
-  background-color: shade($blue, 20%);
+  background-color: shade($blue, 30%);
 }
 
 .bright-blue-bg {

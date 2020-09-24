@@ -42,8 +42,8 @@ const Skills = () => {
         },
         {
             name: "Jest",
-            categories: ['frontend', 'backend', 'misc', 'all'],
-            color: ['yellow-bg']
+            categories: ['frontend', 'backend', 'all'],
+            color: ['red-bg']
         },
         {
             name: "NodeJS",
@@ -99,6 +99,41 @@ const Skills = () => {
             name: "MaterialUI",
             categories: ['frontend', 'design', 'all'],
             color: ['bright-blue-bg']
+        },
+        {
+            name: "React Testing Library",
+            categories: ['frontend', 'all'],
+            color: ['bright-blue-bg']
+        },
+        {
+            name: "PgAdmin",
+            categories: ['backend', 'all'],
+            color: ['blue-bg']
+        },
+        {
+            name: "Redux",
+            categories: ['frontend', 'all'],
+            color: ['purple-bg']
+        },
+        {
+            name: "SVG Animation",
+            categories: ['frontend', 'design', 'all'],
+            color: ['yellow-bg']
+        },
+        {
+            name: "Terminal",
+            categories: ['misc', 'all'],
+            color: ['green-bg']
+        },
+        {
+            name: "Styled Components",
+            categories: ['frontend', 'design', 'all'],
+            color: ['orange-bg']
+        },
+        {
+            name: "Markdown",
+            categories: ['misc', 'all'],
+            color: ['yellow-bg']
         }
     ];
 

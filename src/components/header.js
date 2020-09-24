@@ -21,6 +21,7 @@ const Header = (props) => {
                 "I'm a Minneapolis-based<br/>  <span class='orange'>dad-joke connoisseur</span>,",
                 "I'm a Minneapolis-based<br/>  <span class='green'>Web Developer</span>."],
             smartBackspace: true,
+            startDelay: 1000,
             typeSpeed: 25,
         });
     }, [])
