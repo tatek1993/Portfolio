@@ -201,7 +201,9 @@ $bg-color: #282c34;
   z-index: 20;
   flex-direction: column;
   margin: 0 3rem;
-  // border-top: 1px solid $bar-grey;
+  border-left: 1px solid $bar-grey;
+  border-right: 1px solid $bar-grey;
+  border-bottom: 1px solid $bar-grey;
 }
 
 .skill {
@@ -226,7 +228,6 @@ $bg-color: #282c34;
   flex-direction: column;
   margin-top: 7em;
   margin-bottom: 7em;
-  border-bottom: 1px solid black;
   
 }
 
