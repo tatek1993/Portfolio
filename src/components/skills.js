@@ -121,7 +121,7 @@ const Skills = () => {
             color: ['yellow-bg']
         },
         {
-            name: "Terminal",
+            name: "bash",
             categories: ['misc', 'all'],
             color: ['green-bg']
         },
