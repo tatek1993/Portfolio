@@ -63,8 +63,6 @@ $bg-color: #282c34;
 // HEADER
 
 .header {
-  background-color: #282c34;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -72,15 +70,13 @@ $bg-color: #282c34;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 4rem;
-  /* font-size: 1.5em; */
-  
+
 }
 
 .header-text-container {
   display: flex;
   margin-top: 5%;
   min-width: 30%;
-  /* margin: auto 0; */
   flex-direction: column;
 }
 
@@ -161,6 +157,7 @@ $bg-color: #282c34;
   display: inline-block;
   margin-top: 8%;
   background-color: $med-grey;
+  padding: 1rem 2rem;
   // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   // border: 1px solid #14161a;
 }
@@ -289,21 +286,33 @@ $bg-color: #282c34;
 
 .projects-section {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  padding-left: 5%;
   border-left: 2px solid #8e98b8a8;
 }
+
+.project-container {
+  margin:0;
+  width: 50%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 20px;
+}
+// this is being used to ensure each project is taking up 50% but still has room for padding
 
 .project {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
-  width: 40%;
   padding: 1.5rem;
   background-color: $dark-grey;
   font-size: calc(10px + 1vmin);
   border: 1px solid #14161a;
-  
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
 
   h2 {
     text-align: center;
@@ -313,6 +322,7 @@ $bg-color: #282c34;
 
   p {
     line-height: 1.5rem;
+    
   }
 
   a {
@@ -327,12 +337,16 @@ $bg-color: #282c34;
 
   img {
     border-radius: 10px;
+    width:100%;
   }
 }
 
 .tools {
   display: flex;
   flex-direction: row;
+  .skill:first-child {
+    margin-left: 0;
+  }
 }
 
 // COLOR CLASSES

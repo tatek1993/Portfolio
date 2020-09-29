@@ -31,8 +31,8 @@ const Projects = () => {
         },
         {
             image: Docs,
-            title: "Med Cabinet: Cannabis Strain Suggester Back End",
-            description: "A Node.js and Express restful API for a web application which recommends medical cannabis strains to patients based on their symptoms & preferences.",
+            title: "Medical Cabinet Back End",
+            description: "A Node.js and Express restful API for a web application which recommends medical cannabis strains to patients.",
             tools: ['Node.js', 'Express', 'Knex.js', 'SQLITE3'],
             github: "https://github.com/tatek1993/medical-cabinet-back-end"
         },
@@ -59,16 +59,19 @@ const Projects = () => {
             <div className="projects-list">
                 <div className='projects-section' style={{ display: 'flex', flexWrap: 'wrap' }}>
                     {
-                        projects.map(x => (<div className={`project skill box-shadow`}>
-                            <img src={x.image} />
-                            <h2>{x.title}</h2>
-                            <p>{x.description}</p>
-                            <div className='tools'>
-                                {x.tools.map(tool => (<div className={`skill border-box ${toolColors[tool]}`}>{tool} </div>))}
-                            </div>
-                            <a href={x.github}><i class="fab fa-github" style={{ fontSize: 'calc(15px + 1vmin)' }} /> {x.github.replace('https://github.com/', '')}</a>
+                        projects.map(x => (
+                            <div className="project-container">
+                                <div className={`project box-shadow`}>
+                                    <img src={x.image} />
+                                    <h2>{x.title}</h2>
+                                    <p>{x.description}</p>
+                                    <div className='tools'>
+                                        {x.tools.map(tool => (<div className={`skill border-box ${toolColors[tool]}`}>{tool} </div>))}
+                                    </div>
+                                    <a href={x.github}><i class="fab fa-github" style={{ fontSize: 'calc(15px + 1vmin)' }} /> {x.github.replace('https://github.com/', '')}</a>
 
-                        </div>))
+                                </div>
+                            </div>))
                     }
                 </div>
             </div>
