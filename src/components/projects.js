@@ -1,38 +1,73 @@
 import React, { useState, useRef } from 'react';
+import Canary from '../images/pig.gif';
+import Nav from '../images/nav.gif';
+import Gol from '../images/gol.gif';
+import Docs from '../images/apidocs.png';
+
 
 const Projects = () => {
 
+
+    const toolColors = {
+        "React": "bright-blue-bg",
+        "CSS": "orange-bg",
+        "HTML": "red-bg",
+        "HTML Canvas": "red-bg",
+        "Node.js": "green-bg",
+        "Express": "orange-bg",
+        "Knex.js": "red-bg",
+        "SQLITE3": "green-bg",
+        "JavaScript": "yellow-bg"
+
+    };
+
     const projects = [
         {
-            image: ['yellow-bg'],
+            image: Gol,
             title: "Game Of Life",
             description: "An interactive in-browser version of Conway's Game Of Life made using HTML Canvas.",
+            tools: ['React', 'CSS', 'HTML Canvas'],
             github: "https://github.com/tatek1993/Game-Of-Life"
         },
         {
-            image: ['yellow-bg'],
-            title: "Medical Cabinet Back End",
-            description: "A Node.js and Express restful API for the Medical Cabinet application, medical cannabis strain suggester.",
+            image: Docs,
+            title: "Med Cabinet: Cannabis Strain Suggester Back End",
+            description: "A Node.js and Express restful API for a web application which recommends medical cannabis strains to patients based on their symptoms & preferences.",
+            tools: ['Node.js', 'Express', 'Knex.js', 'SQLITE3'],
             github: "https://github.com/tatek1993/medical-cabinet-back-end"
         },
         {
-            image: ['yellow-bg'],
+            image: Canary,
             title: "Canary Animation Test",
             description: "A sample layout and animation mock-up for the marketing page of an investing/crowdfunding app.",
+            tools: ['React', 'CSS', 'HTML'],
             github: "https://github.com/tatek1993/Canary-Animation-WIP"
+        },
+        {
+            image: Nav,
+            title: "Animated Navigation Bar Test",
+            description: "A simple mock-up of an animated navigation bar, created for a self-directed collaborative project.",
+            tools: ['JavaScript', 'CSS', 'HTML'],
+            github: "https://github.com/tatek1993/nav-bubble-test"
         },
     ]
 
 
     return (
-        <div className="about border-box">
+        <div className="about box-shadow projects">
             <h2><i class="fas fa-angle-down chevron" /><span className="red">.projects</span> {'{'} </h2>
             <div className="projects-list">
-                <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                <div className='projects-section' style={{ display: 'flex', flexWrap: 'wrap' }}>
                     {
-                        projects.map(x => (<div className={`skill border-box  ${x.color}`}>
-                            {x.title}<br></br>
-                            {x.description}
+                        projects.map(x => (<div className={`project skill box-shadow`}>
+                            <img src={x.image} />
+                            <h2>{x.title}</h2>
+                            <p>{x.description}</p>
+                            <div className='tools'>
+                                {x.tools.map(tool => (<div className={`skill border-box ${toolColors[tool]}`}>{tool} </div>))}
+                            </div>
+                            <a href={x.github}><i class="fab fa-github" style={{ fontSize: 'calc(15px + 1vmin)' }} /> {x.github.replace('https://github.com/', '')}</a>
+
                         </div>))
                     }
                 </div>

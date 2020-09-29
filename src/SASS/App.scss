@@ -278,7 +278,61 @@ $bg-color: #282c34;
 
 .box-shadow {
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.329);
+ 
   
+}
+
+// PROJECTS
+.projects {
+  border: 1px solid #14161a;
+}
+
+.projects-section {
+  display: flex;
+  justify-content: space-between;
+  border-left: 2px solid #8e98b8a8;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  padding: 1.5rem;
+  background-color: $dark-grey;
+  font-size: calc(10px + 1vmin);
+  border: 1px solid #14161a;
+  
+
+  h2 {
+    text-align: center;
+    color: $light-grey;
+    text-decoration: double;
+  }
+
+  p {
+    line-height: 1.5rem;
+  }
+
+  a {
+    color: $light-grey;
+    text-decoration: none;
+    &:hover {
+      color: white;
+
+    }
+
+  }
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
 }
 
 // COLOR CLASSES
