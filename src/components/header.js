@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import image from '../images/tate-keller-1.jpg';
+import { Link } from "react-router-dom";
 import * as All from '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 import Typed from 'typed.js';
@@ -43,10 +44,10 @@ const Header = (props) => {
                 <div class="dropdown border-box">
                     <div class="dropbtn"><i class="fas fa-angle-down" /> <i class="fas fa-folder icon" /> Portfolio</div>
                     <div class="dropdown-content">
-                        <a href="#"><i class="fab fa-python blue" /> About Me</a>
-                        <a href="#"><i class="fab fa-js-square yellow" /> Skills</a>
-                        <a href="#"><i class="fab fa-css3 purple" /> Projects</a>
-                        <a href="#"><i class="fas fa-code-branch red" /> Contact</a>
+                        <a href="#"><Link to="/About"><i class="fab fa-python blue" /> About Me</Link></a>
+                        <a href="#"><Link to="/Skills"><i class="fab fa-js-square yellow" /> Skills</Link></a>
+                        <a href="#"><Link to="/Projects"><i class="fab fa-css3 purple" /> Projects</Link></a>
+                        <a href="#"><Link to="/Contact"><i class="fas fa-code-branch red" /> Contact</Link></a>
                     </div>
                 </div>
             </div>
