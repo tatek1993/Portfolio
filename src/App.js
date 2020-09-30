@@ -11,9 +11,9 @@ function App() {
   return (
     <div>
       <Header />
-      <Route path="/About" component={About} />
-      <Route path="/Skills" component={Skills} />
-      <Route path="/Projects" component={Projects} />
+      <About />
+      <Skills />
+      <Projects />
 
     </div>
 

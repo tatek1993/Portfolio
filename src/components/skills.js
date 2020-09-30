@@ -138,7 +138,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="skills-section">
+        <div id="skills" className="skills-section">
 
             <div className='skill-header'>
                 <div className='left-spacer'></div>

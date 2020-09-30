@@ -44,10 +44,10 @@ const Header = (props) => {
                 <div class="dropdown border-box">
                     <div class="dropbtn"><i class="fas fa-angle-down" /> <i class="fas fa-folder icon" /> Portfolio</div>
                     <div class="dropdown-content">
-                        <a href="#"><Link to="/About"><i class="fab fa-python blue" /> About Me</Link></a>
-                        <a href="#"><Link to="/Skills"><i class="fab fa-js-square yellow" /> Skills</Link></a>
-                        <a href="#"><Link to="/Projects"><i class="fab fa-css3 purple" /> Projects</Link></a>
-                        <a href="#"><Link to="/Contact"><i class="fas fa-code-branch red" /> Contact</Link></a>
+                        <a href="#about-me"><i class="fab fa-python blue" /> About Me</a>
+                        <a href="#skills"><i class="fab fa-js-square yellow" /> Skills</a>
+                        <a href="#projects"><i class="fab fa-css3 purple" /> Projects</a>
+                        <a href="#contact"><i class="fas fa-code-branch red" /> Contact</a>
                     </div>
                 </div>
             </div>

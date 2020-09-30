@@ -56,7 +56,8 @@ $bg-color: #282c34;
 //   width: 70%;
   padding: 0 5rem;
   border-left: 2px solid $bar-grey;
-  font-size: calc(10px + 1vmin);
+  // font-size: calc(10px + 1vmin);
+  font-size: 18px;
   line-height: 2rem;
 }
 
@@ -201,7 +202,7 @@ $bg-color: #282c34;
 }
 
 .skill {
-  padding: .8rem;
+  padding: .7rem;
   margin: 1.2rem;
   border-radius: 10px;
   font-size: calc(8px + 1vh);
@@ -306,19 +307,12 @@ $bg-color: #282c34;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  padding: 1.5rem;
-  background-color: $dark-grey;
+  background-color: $med-grey;
   font-size: calc(10px + 1vmin);
   border: 1px solid #14161a;
   height: 100%;
   box-sizing: border-box;
   border-radius: 10px;
-
-  h2 {
-    text-align: center;
-    color: $light-grey;
-    text-decoration: double;
-  }
 
   p {
     line-height: 1.5rem;
@@ -332,13 +326,37 @@ $bg-color: #282c34;
       color: white;
 
     }
-
   }
+}
 
+.project-header {
+  width: 100%;
+  background-color: $dark-grey;
+  box-sizing: border-box;
+  padding: 1.5rem  1.5rem .1rem 1.5rem;
+  border-radius: 10px 10px 0 0;
+  
   img {
     border-radius: 10px;
     width:100%;
   }
+  .project-title {
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 1px;
+
+    span {
+      font-weight: bold ;
+    }
+  }
+}
+
+.project-description {
+  padding: 1.5rem;
+  // background-color: $med-grey;
+  border-radius: 0 0 10px 10px;
+  max-width: 100%;
 }
 
 .tools {
