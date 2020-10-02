@@ -367,6 +367,27 @@ $bg-color: #282c34;
   }
 }
 
+// CONTACT
+
+.contactInfo {
+  display:flex;
+  flex-direction: column;
+  
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.lower-div {
+  width:50%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+}
 // COLOR CLASSES
 
 .red {
