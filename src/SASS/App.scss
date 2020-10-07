@@ -183,7 +183,9 @@ $bg-color: #282c34;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: $hover;}
+.dropdown-content a:hover {
+  background-color: $hover;
+}
 
 // SKILLS
 

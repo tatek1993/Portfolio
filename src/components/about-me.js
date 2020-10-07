@@ -8,7 +8,7 @@ const About = (props) => {
             <div className="about-text">
                 <h2><i class="fas fa-angle-down chevron" /><span className="green">.bio</span> {'{'} </h2>
                 <p className="bio">
-                    My eyes exploring the city sleeping late listening to music. My favorite word is going to shows really hoppy beers I'm a good listener bacon, I value art feminism I enjoy recently moved back I'm pretty laid-back. Thinking about trying yoga Vampire Weekend food trying different restaurants outdoorsy going back to school.
+                    Hello there, my name is Tate Keller-Moctezuma. I'm a front end web developer in Minneapolis, MN specializing in React. I have a passion for writing clean, well-commented code and creating accessible user experiences that don't sacrifice style for function.
                 </p>
                 <h2>{'}'} </h2>
             </div>
