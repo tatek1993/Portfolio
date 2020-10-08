@@ -4,7 +4,7 @@ const About = (props) => {
 
     return (
 
-        <div id="about-me" className='about border-box'>
+        <div id="about-me" className='section border-box'>
             <div className="about-text">
                 <h2><i class="fas fa-angle-down chevron" /><span className="green">.bio</span> {'{'} </h2>
                 <p className="bio">

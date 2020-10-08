@@ -54,7 +54,7 @@ const Projects = () => {
 
 
     return (
-        <div id="projects" className="about box-shadow projects">
+        <div id="projects" className="section box-shadow projects">
             <h2><i class="fas fa-angle-down chevron" /><span className="red">.projects</span> {'{'} </h2>
             <div className='projects-section' style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {

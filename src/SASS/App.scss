@@ -31,7 +31,7 @@ $bg-color: #282c34;
 
 // ABOUT ME
 
-.about {
+.section {
   padding: 1rem 3rem;
   margin: 3rem;
   text-align: left;
@@ -315,6 +315,7 @@ $bg-color: #282c34;
   height: 100%;
   box-sizing: border-box;
   border-radius: 10px;
+  padding-top: 1px;
 
   p {
     line-height: 1.5rem;
@@ -374,9 +375,11 @@ $bg-color: #282c34;
 
 .contactInfo {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style-type: none;
-  
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 1rem -1.2rem;
 
   a {
     text-decoration: none;
