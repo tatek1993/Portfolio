@@ -181,6 +181,7 @@ $bg-color: #282c34;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: background-color 300ms ease-out;
 }
 
 /* Change color of dropdown links on hover */
@@ -261,6 +262,7 @@ $bg-color: #282c34;
   font-size: 1.1rem;
   cursor: pointer;
   border-collapse: collapse;
+  transition: background-color 300ms ease-out, color 300ms ease-out;
   &:hover {
     background-color: $med-grey;
     color: $light-grey;
@@ -327,7 +329,7 @@ $bg-color: #282c34;
     text-decoration: none;
     &:hover {
       color: white;
-
+      transition: color 300ms ease-out;
     }
   }
 }
@@ -379,11 +381,67 @@ $bg-color: #282c34;
   list-style-type: none;
   flex-wrap: wrap;
   padding: 0;
-  margin: 1rem -1.2rem;
+  margin: 0rem -1.2rem;
+  justify-content: stretch;
+  text-align: center;
+  &.home-div {
+    justify-content: center;
+    .skill {
+      background-color: $med-grey;
+      flex-grow: initial;
+    }
+  }
 
+  .skill {
+    flex-grow: 1;
+    font-size: calc(12px + 1vmin);
+    background-color: $project-grey;
+    transition: background-color 300ms ease-out;
+    i {
+      transition: color 300ms ease-out;
+    }
+  }
   a {
     text-decoration: none;
     color: white;
+  }
+
+  
+  .contact-gh{
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.513);
+    
+      i {
+        color: white;
+      }
+    }
+  }
+  .contact-mail {
+    &:hover {
+      @extend .red-bg;
+     
+      i {
+        color: white;
+      }
+    }
+  }
+  .contact-twtr{
+    &:hover {
+      @extend .bright-blue-bg;
+  
+      i {
+        color: white;
+      }
+    }
+  }
+  .contact-lnk {
+    &:hover {
+      @extend .blue-bg;
+   
+      i {
+        color: white;
+      }
+    }
   }
 }
 
@@ -393,8 +451,12 @@ $bg-color: #282c34;
 
 .contact-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+
+.home-div {
+ justify-content: center;
 }
 // COLOR CLASSES
 
