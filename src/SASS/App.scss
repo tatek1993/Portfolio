@@ -309,7 +309,7 @@ $bg-color: #282c34;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: $project-grey;
+  background-color: $hover;
   font-size: calc(10px + 1vmin);
   border: 1px solid #14161a;
   height: 100%;
@@ -375,6 +375,7 @@ $bg-color: #282c34;
 .contactInfo {
   display:flex;
   flex-direction: column;
+  list-style-type: none;
   
 
   a {
@@ -390,6 +391,7 @@ $bg-color: #282c34;
 .contact-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 // COLOR CLASSES
 

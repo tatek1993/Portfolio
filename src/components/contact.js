@@ -12,30 +12,28 @@ const Contact = () => {
                         <h2><i class="fas fa-angle-down chevron" /><span className="blue">.contact</span> {'{'} </h2>
                         <div className="bio">
 
-                            <p>Reach out if you'd like to discuss collaborating on projects, getting a custom page made, or if you just need a second set of eyes to look over your code.</p>
+                            <h3>Reach out if you'd like to discuss collaborating on projects, getting a custom page made, or if you just need a second set of eyes to look over your code.</h3>
                             <br></br>
 
                             <div className="contact-container">
-                                <div className='lower-div'>
-                                    a word
-                                </div>
-                                <div className='lower-div'>
-                                    <ul className="contactInfo">
-                                        <li >
-                                            <i class="fa fa-home"></i> Minneapolis, MN | Remote
+
+                                <ul className="contactInfo">
+                                    <li className="skill border-box">
+                                        <i class="fa fa-home"></i> Minneapolis, MN | Remote
                                         </li>
-                                        <li >
-                                            <i class="fab fa-github"></i> (xxx) xxx-xxxx
-                                        </li>
-                                        <li >
-                                            <a href="mailto:tatekelleratwork@gmail.com"><i class="fa fa-envelope"></i> tatekelleratwork@gmail.com</a>
-                                        </li>
-                                        <li >
-                                            <a href="https://twitter.com/MoctezumaTate"><i class="fab fa-twitter"></i>@MoctezumaTate</a>
-                                        </li>
-                                        <li ><a href="https://www.linkedin.com/in/tate-keller-16ab7a183/"><i class="fab fa-linkedin"></i> My Linkedin</a></li>
-                                    </ul>
-                                </div>
+                                    <li className="skill border-box">
+                                        <a href="https://github.com/tatek1993"> <i class="fab fa-github"></i> My Github </a>
+                                    </li>
+                                    <li className="skill border-box">
+                                        <a href="mailto:tatekelleratwork@gmail.com"><i class="fa fa-envelope"></i> tatekelleratwork@gmail.com</a>
+                                    </li>
+                                    <li className="skill border-box">
+                                        <a href="https://twitter.com/MoctezumaTate"><i class="fab fa-twitter"></i> @MoctezumaTate</a>
+                                    </li>
+                                    <li className="skill border-box">
+                                        <a href="https://www.linkedin.com/in/tate-keller-16ab7a183/"><i class="fab fa-linkedin"></i> My Linkedin</a></li>
+                                </ul>
+
                             </div>
 
 
