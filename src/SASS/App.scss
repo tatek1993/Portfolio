@@ -1,6 +1,7 @@
 // Variables
 $bar-grey: #8e98b8a8;
 $light-grey: #B4B7CB;
+$project-grey: #444551;
 $med-grey: #313340;
 $dark-grey: #252831;
 $hover: #414553;
@@ -308,7 +309,7 @@ $bg-color: #282c34;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: $med-grey;
+  background-color: $project-grey;
   font-size: calc(10px + 1vmin);
   border: 1px solid #14161a;
   height: 100%;
