@@ -395,7 +395,7 @@ $bg-color: #282c34;
   .skill {
     flex-grow: 1;
     font-size: calc(12px + 1vmin);
-    background-color: $project-grey;
+    border: 1px solid white;
     transition: background-color 300ms ease-out;
     i {
       transition: color 300ms ease-out;
@@ -458,6 +458,7 @@ $bg-color: #282c34;
 .home-div {
  justify-content: center;
 }
+
 // COLOR CLASSES
 
 .red {

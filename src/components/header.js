@@ -54,10 +54,10 @@ const Header = (props) => {
                 <div class="dropdown border-box">
                     <div class="dropbtn"><i class="fas fa-angle-down" /> <i class="fas fa-folder icon" /> Portfolio</div>
                     <div class="dropdown-content">
-                        <a href="#about-me" onClick={}><i class="fab fa-python blue" /> About Me</a>
-                        <a href="#skills"><i class="fab fa-js-square yellow" /> Skills</a>
-                        <a href="#projects"><i class="fab fa-css3 purple" /> Projects</a>
-                        <a href="#contact"><i class="fas fa-code-branch red" /> Contact</a>
+                        <a onClick={() => scrollToId('about-me')}><i class="fab fa-python blue" /> About Me</a>
+                        <a onClick={() => scrollToId('skills')}><i class="fab fa-js-square yellow" /> Skills</a>
+                        <a onClick={() => scrollToId('projects')}><i class="fab fa-css3 purple" /> Projects</a>
+                        <a onClick={() => scrollToId('contact')}><i class="fas fa-code-branch red" /> Contact</a>
                     </div>
                 </div>
             </div>

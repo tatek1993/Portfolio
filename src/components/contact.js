@@ -10,8 +10,8 @@ const Contact = () => {
                 <h2><i class="fas fa-angle-down chevron" /><span className="bright-blue">.contact</span> {'{'} </h2>
                 <div className="bio">
 
-                    <h3>Reach out if you'd like to discuss collaborating on projects, getting a custom page made, or if you just need a second set of eyes to look over your code.</h3>
-                    <br></br>
+                    <h3>Does your website need a face-lift? Need help wrangling your database schema? Is your developer team one person short of joining the kickball league? Shoot me a message and we'll grab a socially-distant coffee over Zoom!</h3>
+
 
                     <div className="contact-container">
                         <div className='contactInfo home-div'>
