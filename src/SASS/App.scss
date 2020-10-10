@@ -210,6 +210,7 @@ $bg-color: #282c34;
   margin: 1.2rem;
   border-radius: 10px;
   font-size: calc(8px + 1vh);
+  white-space: nowrap;
   
   &.alive {
     color: white;
@@ -225,8 +226,7 @@ $bg-color: #282c34;
 .skills-section{
   display: flex;
   flex-direction: column;
-  margin-top: 7em;
-  margin-bottom: 7em;
+  margin: 3rem 7rem;
   
 }
 

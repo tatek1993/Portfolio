@@ -25,13 +25,13 @@ const Contact = () => {
                             <a href="https://github.com/tatek1993" className="skill border-box contact-gh"> <i class="fab fa-github" aria-label="Github"></i> github.com/tatek1993 </a>
 
 
-                            <a href="mailto:tatekelleratwork@gmail.com" className="skill border-box contact-mail"><i class="fa fa-envelope red" aria-label="Email"></i> tatekelleratwork@gmail.com </a>
-
-
                             <a href="https://twitter.com/MoctezumaTate" className="skill border-box contact-twtr"><i class="fab fa-twitter bright-blue" aria-label="Twitter"></i> @MoctezumaTate </a>
 
 
                             <a href="https://www.linkedin.com/in/tate-keller-16ab7a183/" className="skill border-box contact-lnk"><i class="fab fa-linkedin blue" aria-label="Linkedin"></i> tate-keller-moctezuma </a>
+
+
+                            <a href="mailto:tatekelleratwork@gmail.com" className="skill border-box contact-mail"><i class="fa fa-envelope red" aria-label="Email"></i> tatekelleratwork@gmail.com </a>
                         </div>
 
                     </div>

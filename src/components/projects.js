@@ -17,7 +17,8 @@ const Projects = () => {
         "Express": "orange-bg",
         "Knex.js": "red-bg",
         "SQLITE3": "green-bg",
-        "JavaScript": "yellow-bg"
+        "JavaScript": "yellow-bg",
+        "SVG Animation": "purple-bg"
 
     };
 
@@ -26,14 +27,14 @@ const Projects = () => {
             image: Canary,
             title: "Canary Animation Test",
             description: "A sample layout and animation mock-up for the marketing page of an investing/crowdfunding app.",
-            tools: ['React', 'CSS', 'HTML'],
+            tools: ['React', 'CSS', 'HTML', 'SVG Animation'],
             github: "https://github.com/tatek1993/Canary-Animation-WIP"
         },
         {
             image: Nav,
             title: "Animated Navbar Test",
             description: "A simple mock-up of an animated navigation bar, created for a self-directed collaborative project.",
-            tools: ['JavaScript', 'CSS', 'HTML'],
+            tools: ['JavaScript', 'CSS', 'HTML', 'SVG Animation'],
             github: "https://github.com/tatek1993/nav-bubble-test"
         },
         {
