@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import image from '../images/tate-keller-1.jpg';
+import image from '../images/portfolio-pic3.jpeg';
 import { Link } from "react-router-dom";
 import * as All from '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
