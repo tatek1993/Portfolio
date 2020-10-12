@@ -146,27 +146,27 @@ const Skills = () => {
                 <div className={`tab box-shadow ${selectedCategory == 'all' ? 'active-tab' : ''}`}
                     style={{ zIndex: selectedCategory == 'all' ? 10 : 9 }}
                     onClick={() => setSelectedCatagory('all')}>
-                    <i class="fas fa-file-alt bright-blue" /> Skills.txt
+                    <i class="fas fa-file-alt bright-blue" />&nbsp;Skills.txt
                 </div>
                 <div className={`tab box-shadow ${selectedCategory == 'frontend' ? 'active-tab' : ''}`}
                     style={{ zIndex: selectedCategory == 'frontend' ? 10 : 8 }}
                     onClick={() => setSelectedCatagory('frontend')}>
-                    <i class="fab fa-js-square yellow" /> Fontend.js
+                    <i class="fab fa-js-square yellow" />&nbsp;Fontend.js
                 </div>
                 <div className={`tab box-shadow ${selectedCategory == 'backend' ? 'active-tab' : ''}`}
                     style={{ zIndex: selectedCategory == 'backend' ? 10 : 7 }}
                     onClick={() => setSelectedCatagory('backend')}>
-                    <i class="fab fa-python blue" /> Backend.py
+                    <i class="fab fa-python blue" />&nbsp;Backend.py
                 </div>
                 <div className={`tab box-shadow ${selectedCategory == 'design' ? 'active-tab' : ''}`}
                     style={{ zIndex: selectedCategory == 'design' ? 10 : 6 }}
                     onClick={() => setSelectedCatagory('design')}>
-                    <i class="fab fa-css3 purple" /> Design.css
+                    <i class="fab fa-css3 purple" />&nbsp;Design.css
                 </div>
                 <div className={`tab box-shadow ${selectedCategory == 'misc' ? 'active-tab' : ''}`}
                     style={{ zIndex: selectedCategory == 'misc' ? 10 : 5 }}
                     onClick={() => setSelectedCatagory('misc')}>
-                    <i class="fab fa-npm red" /> Misc.json
+                    <i class="fab fa-npm red" />&nbsp;Misc.json
                 </div>
 
                 <div className='right-spacer'></div>
