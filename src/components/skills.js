@@ -142,23 +142,23 @@ const skills = [
 
 const categories = [
     {
-        category: (<><i class="fas fa-file-alt bright-blue" />&nbsp;Skills.txt</>),
+        category: (<><i className="fas fa-file-alt bright-blue" />&nbsp;Skills.txt</>),
         id: 'all'
     },
     {
-        category: (<><i class="fab fa-js-square yellow" />&nbsp;Fontend.js</>),
+        category: (<><i className="fab fa-js-square yellow" />&nbsp;Fontend.js</>),
         id: 'frontend'
     },
     {
-        category: (<><i class="fab fa-python blue" />&nbsp;Backend.py</>),
+        category: (<><i className="fab fa-python blue" />&nbsp;Backend.py</>),
         id: 'backend'
     },
     {
-        category: (<><i class="fab fa-css3 purple" />&nbsp;Design.css</>),
+        category: (<><i className="fab fa-css3 purple" />&nbsp;Design.css</>),
         id: 'design'
     },
     {
-        category: (<><i class="fab fa-npm red" />&nbsp;Misc.json</>),
+        category: (<><i className="fab fa-npm red" />&nbsp;Misc.json</>),
         id: 'misc'
     },
 ];
@@ -177,14 +177,14 @@ const Skills = () => {
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {
                     skills.filter(x => x.categories.includes(selectedCategory))
-                        .map(x => (<div className={`skill border-box alive ${x.color}`}>{x.name}</div>))
+                        .map(x => (<div key={x.name} className={`skill border-box alive ${x.color}`}>{x.name}</div>))
                 }
             </div>
 
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {
                     skills.filter(x => !x.categories.includes(selectedCategory))
-                        .map(x => (<div className="skill border-box dead">{x.name}</div>))
+                        .map(x => (<div key={x.name} className="skill border-box dead">{x.name}</div>))
                 }
             </div>
         </>
@@ -215,48 +215,68 @@ const Skills = () => {
                 onExited={() => setAnimating(false)}
                 key={category.id}
             >
+
                 {category.category}
+                {getSkillsForCategory(category.id)}
+
             </CarouselItem>
         );
     });
 
     return (
-        <div id="skills" className="section skills-section">
+        <div id="skills" >
+            <div className="section skills-section">
+                <div className='skill-header'>
+                    <div className='left-spacer'></div>
 
-            <div className='skill-header'>
-                <div className='left-spacer'></div>
+                    <div className={`tab box-shadow ${selectedCategory == 'all' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory == 'all' ? 10 : 9 }}
+                        onClick={() => setSelectedCatagory('all')}>
+                        <i className="fas fa-file-alt bright-blue" />&nbsp;Skills.txt
+                    </div>
+                    <div className={`tab box-shadow ${selectedCategory == 'frontend' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory == 'frontend' ? 10 : 8 }}
+                        onClick={() => setSelectedCatagory('frontend')}>
+                        <i className="fab fa-js-square yellow" />&nbsp;Fontend.js
+                    </div>
+                    <div className={`tab box-shadow ${selectedCategory == 'backend' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory == 'backend' ? 10 : 7 }}
+                        onClick={() => setSelectedCatagory('backend')}>
+                        <i className="fab fa-python blue" />&nbsp;Backend.py
+                    </div>
+                    <div className={`tab box-shadow ${selectedCategory == 'design' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory == 'design' ? 10 : 6 }}
+                        onClick={() => setSelectedCatagory('design')}>
+                        <i className="fab fa-css3 purple" />&nbsp;Design.css
+                    </div>
+                    <div className={`tab box-shadow ${selectedCategory == 'misc' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory == 'misc' ? 10 : 5 }}
+                        onClick={() => setSelectedCatagory('misc')}>
+                        <i className="fab fa-npm red" />&nbsp;Misc.json
+                    </div>
 
-                <div className={`tab box-shadow ${selectedCategory == 'all' ? 'active-tab' : ''}`}
-                    style={{ zIndex: selectedCategory == 'all' ? 10 : 9 }}
-                    onClick={() => setSelectedCatagory('all')}>
-                    <i class="fas fa-file-alt bright-blue" />&nbsp;Skills.txt
-                </div>
-                <div className={`tab box-shadow ${selectedCategory == 'frontend' ? 'active-tab' : ''}`}
-                    style={{ zIndex: selectedCategory == 'frontend' ? 10 : 8 }}
-                    onClick={() => setSelectedCatagory('frontend')}>
-                    <i class="fab fa-js-square yellow" />&nbsp;Fontend.js
-                </div>
-                <div className={`tab box-shadow ${selectedCategory == 'backend' ? 'active-tab' : ''}`}
-                    style={{ zIndex: selectedCategory == 'backend' ? 10 : 7 }}
-                    onClick={() => setSelectedCatagory('backend')}>
-                    <i class="fab fa-python blue" />&nbsp;Backend.py
-                </div>
-                <div className={`tab box-shadow ${selectedCategory == 'design' ? 'active-tab' : ''}`}
-                    style={{ zIndex: selectedCategory == 'design' ? 10 : 6 }}
-                    onClick={() => setSelectedCatagory('design')}>
-                    <i class="fab fa-css3 purple" />&nbsp;Design.css
-                </div>
-                <div className={`tab box-shadow ${selectedCategory == 'misc' ? 'active-tab' : ''}`}
-                    style={{ zIndex: selectedCategory == 'misc' ? 10 : 5 }}
-                    onClick={() => setSelectedCatagory('misc')}>
-                    <i class="fab fa-npm red" />&nbsp;Misc.json
+                    <div className='right-spacer'></div>
                 </div>
 
-                <div className='right-spacer'></div>
+                <div className='skills box-shadow'>
+                    {getSkillsForCategory(selectedCategory)}
+                </div>
             </div>
 
-            <div className='skills box-shadow'>
-                {getSkillsForCategory(selectedCategory)}
+            {/* Carousel for responsive design */}
+            <div className='border-box section' style={{ display: 'block' }}>
+                <Carousel
+                    activeIndex={activeIndex}
+                    next={next}
+                    previous={previous}
+                    interval={false}
+
+                >
+                    <CarouselIndicators items={categories} activeIndex={activeIndex} onClickHandler={goToIndex} />
+                    {slides}
+                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                    <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+                </Carousel>
             </div>
         </div >
 

@@ -6,8 +6,8 @@ const About = (props) => {
 
         <div id="about-me" className='section border-box'>
             <div className="about-text">
-                <h2><i class="fas fa-angle-down chevron" /><span className="green">.bio</span> {'{'} </h2>
-                <p className="bio">
+                <h2><i className="fas fa-angle-down chevron" /><span className="green">.bio</span> {'{'} </h2>
+                <div className="bio">
 
                     <h3>Hello there, my name is Tate Keller-Moctezuma. </h3>
 
@@ -16,7 +16,7 @@ const About = (props) => {
                     <br />
                     When I'm not coding or brainstorming side projects, you can find me gardening, painting, and playing tug-of-war with my dog.
 
-                </p>
+                </div>
                 <h2>{'}'} </h2>
             </div>
 

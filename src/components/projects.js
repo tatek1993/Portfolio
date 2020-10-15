@@ -60,11 +60,11 @@ const Projects = () => {
 
     return (
         <div id="projects" className="section box-shadow projects">
-            <h2><i class="fas fa-angle-down chevron" /><span className="red">.projects</span> {'{'} </h2>
+            <h2><i className="fas fa-angle-down chevron" /><span className="red">.projects</span> {'{'} </h2>
             <div className='projects-section' style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {
                     projects.map(x => (
-                        <div className="project-container">
+                        <div key={x.title} className="project-container">
                             <div className={`project box-shadow`}>
                                 <div className="project-header">
                                     <img src={x.image} />
@@ -78,9 +78,9 @@ const Projects = () => {
                                         <p>{x.description}</p>
                                     </div>
                                     <div className='tools' style={{ flexWrap: 'wrap' }}>
-                                        {x.tools.map(tool => (<div className={`skill border-box ${toolColors[tool]}`}>{tool} </div>))}
+                                        {x.tools.map(tool => (<div key={tool} className={`skill border-box ${toolColors[tool]}`}>{tool} </div>))}
                                     </div>
-                                    <a href={x.github}><i class="fab fa-github" style={{ fontSize: 'calc(15px + 1vmin)' }} /> {x.github.replace('https://github.com/', '')}</a>
+                                    <a href={x.github}><i className="fab fa-github" style={{ fontSize: 'calc(15px + 1vmin)' }} /> {x.github.replace('https://github.com/', '')}</a>
                                 </div>
                             </div>
                         </div>))
