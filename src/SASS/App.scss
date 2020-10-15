@@ -14,6 +14,8 @@ $purple: #C291E2;
 $bright-blue: rgb(51, 140, 255);
 $bg-color: #282c34;
 
+
+
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
@@ -31,9 +33,11 @@ $bg-color: #282c34;
 
 // ABOUT ME
 
+
+
 .section {
   padding: 1rem 3rem;
-  margin: 3rem 10rem;
+  margin: 3rem calc(10vw - 4rem);
   text-align: left;
   background-color: $med-grey; 
   color: white;
@@ -42,12 +46,15 @@ $bg-color: #282c34;
   flex-direction: column;
 
   h2 {
-      color: $yellow;
-      position: relative;
+    color: $yellow;
+    position: relative;
   }
   
+  @media (max-width: 900px){
+    margin: 3rem 0;
+    
+  }
 }
-
 .about-text {
   align-items: center;
 }
@@ -77,7 +84,7 @@ $bg-color: #282c34;
 
 .header-text-container {
   display: flex;
-  margin-top: 5%;
+  margin-top: calc(7vw - 4rem);
   min-width: 30%;
   flex-direction: column;
 }
@@ -88,7 +95,7 @@ $bg-color: #282c34;
 }
 
 .Main-image {
-  width: 70vmin;
+  width: calc(45vw - 10rem);
   margin: .5rem;
   border-radius: 50% 20% / 10% 40%;
   box-shadow: -2em -1em #1b1d24,
@@ -375,7 +382,7 @@ $bg-color: #282c34;
 .tools {
   display: flex;
   flex-direction: row;
-  margin: 1rem -1.2rem;
+  margin: 0rem -1.2rem;
 }
 
 // CONTACT
