@@ -365,14 +365,17 @@ $bg-color: #282c34;
   border-radius: 0 0 10px 10px;
   max-width: 100%;
   box-sizing: border-box;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .tools {
   display: flex;
   flex-direction: row;
-  .skill:first-child {
-    margin-left: 0;
-  }
+  margin: 1rem -1.2rem;
 }
 
 // CONTACT

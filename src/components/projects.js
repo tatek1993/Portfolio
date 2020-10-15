@@ -73,9 +73,11 @@ const Projects = () => {
                                     </h2>
                                 </div>
                                 <div className="project-description">
-                                    <p>{x.description}</p>
-                                    <p>Role: {x.role}</p>
-                                    <div className='tools'>
+                                    <div>
+                                        <p style={{ fontWeight: 'bold' }}>{x.role}</p>
+                                        <p>{x.description}</p>
+                                    </div>
+                                    <div className='tools' style={{ flexWrap: 'wrap' }}>
                                         {x.tools.map(tool => (<div className={`skill border-box ${toolColors[tool]}`}>{tool} </div>))}
                                     </div>
                                     <a href={x.github}><i class="fab fa-github" style={{ fontSize: 'calc(15px + 1vmin)' }} /> {x.github.replace('https://github.com/', '')}</a>
