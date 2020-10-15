@@ -206,7 +206,7 @@ $bg-color: #282c34;
   background-color: $med-grey;
   z-index: 20;
   flex-direction: column;
-  margin: 0 3rem;
+  // margin: 0 3rem;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -231,9 +231,9 @@ $bg-color: #282c34;
 }
 
 .skills-section{
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 7rem;
+  background-color: initial;
+  padding: 0;
+  
   
 }
 
@@ -245,7 +245,6 @@ $bg-color: #282c34;
 
 .left-spacer {
   width: 3em;
-  margin-left: 3rem;
   border-bottom: 1px solid black;
  
 }
@@ -253,15 +252,12 @@ $bg-color: #282c34;
 .right-spacer {
   min-width: 1em;
   flex: 1;
-  margin-right: 3rem;
   border-bottom: 1px solid black;
 }
 
 .tab {
   padding: 1rem;
   padding-right: 3rem;
-  // border-top-left-radius: 10px;
-  // border-top-right-radius: 10px;
   border: 2px solid mix(black, $dark-grey, 30%);
   margin-right: -2px;
   border-bottom: 1px solid black;
