@@ -74,7 +74,7 @@ const Projects = () => {
                                 </div>
                                 <div className="project-description">
                                     <p>{x.description}</p>
-                                    <p>{x.role}</p>
+                                    <p>Role: {x.role}</p>
                                     <div className='tools'>
                                         {x.tools.map(tool => (<div className={`skill border-box ${toolColors[tool]}`}>{tool} </div>))}
                                     </div>
