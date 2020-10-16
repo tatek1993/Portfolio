@@ -216,7 +216,7 @@ const Skills = () => {
                 key={category.id}
             >
                 <div className='carousel-content'>
-                    {category.category}
+                    <h2 className="carousel-header">{category.category}</h2>
                     {getSkillsForCategory(category.id)}
                 </div>
 

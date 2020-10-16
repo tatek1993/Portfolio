@@ -48,6 +48,7 @@ h3 {
 .section {
   padding: 1rem calc(1vw);
   padding-left: calc(1rem + 3vw);
+  
   margin: 3rem calc(10vw - 4rem);
   text-align: left;
   background-color: $med-grey; 
@@ -74,6 +75,7 @@ h3 {
   align-self: left;
   // padding: 0 5rem;
   padding-left: calc(4vw);
+  padding-right: calc(.5rem + 2vw);
   border-left: 2px solid $bar-grey;
   font-size: 18px;
   line-height: 2rem;
@@ -93,7 +95,7 @@ h3 {
   color: white;
   margin: calc(10vw - 2rem);
   margin-top: 2rem;
-  @media (max-width: 900px){
+  @media (max-width: 1100px){
     align-items: center;
     justify-content: center;
     .name {
@@ -113,6 +115,10 @@ h3 {
   // position: absolute;
   z-index: 1;
   white-space: nowrap;
+
+  @media (max-width: 1100px) {
+    text-align: center;
+  }
  
 }
 
@@ -123,17 +129,33 @@ h3 {
 
 .Main-image {
   width: calc(10rem + 18vw);
-  margin-left: calc(10rem - 15vw);
+  margin-left: calc(12rem - 15vw);
   border-radius: 50% 20% / 10% 40%;
   box-shadow: -2em -1em #1b1d24,
               -1.5em -.75em #1b1d24,
               -1em -0.5em #1b1d24,
               -0.5em -0.25em #1b1d24;
   align-content: flex-end;
-  @media (max-width: 900px){
+  @media (max-width: 1100px){
     display: none;
   }
 
+}
+
+.mobile-image {
+
+  display: none;
+
+  @media (max-width: 1100px) {
+    background: url(/portfolio-pic3.jpeg);
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    display: inline-block;
+    background-size: 30rem 47rem;
+    background-position: -10rem -1.4rem;
+  }
+  
 }
 
 .name {
@@ -165,7 +187,7 @@ h3 {
   font-size: 1.9rem; 
   min-height: 3em;
   min-width: 15em;
-  @media (max-width: 900px){
+  @media (max-width: 1100px){
     text-align: center;
   }
 }
@@ -246,7 +268,7 @@ h3 {
 }
 
 .skill {
-  padding: .7rem;
+  padding: .4rem .7rem;
   margin: calc(.8vw + .3rem);
   border-radius: 10px;
   font-size: calc(8px + 1vh);
@@ -334,8 +356,14 @@ h3 {
 }
 
 .carousel-content {
-  margin: 2rem calc(8vw - 1rem);
+  margin: 2rem calc(8vw - .3rem);
   width: initial;
+}
+
+.section h2 {
+  &.carousel-header {
+    color: white;
+  }
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -461,6 +489,9 @@ h3 {
     font-size: calc(12px + 1vmin);
     border: 1px solid white;
     transition: background-color 300ms ease-out;
+    @media (max-width: 710px){
+      min-width: 60%;
+    }
     i {
       transition: color 300ms ease-out;
     }
@@ -479,6 +510,13 @@ h3 {
         color: white;
       }
     }
+    @media (max-width: 710px){
+      background-color: rgba(0, 0, 0, 0.513);
+      border: none;
+      i {
+        color: white;
+      }
+    }
   }
   .contact-mail {
     &:hover {
@@ -488,7 +526,15 @@ h3 {
         color: white;
       }
     }
+    @media (max-width: 710px){
+      background-color: shade($red, 20%);
+      border: none;
+      i {
+        color: white;
+      }
+    }
   }
+
   .contact-twtr{
     &:hover {
       @extend .bright-blue-bg;
@@ -497,11 +543,26 @@ h3 {
         color: white;
       }
     }
+    @media (max-width: 710px){
+      background-color:shade($bright-blue, 20%);
+      border: none;
+      i {
+        color: white;
+      }
+    }
   }
+
   .contact-lnk {
     &:hover {
       @extend .blue-bg;
    
+      i {
+        color: white;
+      }
+    }
+    @media (max-width: 710px){
+      background-color: shade($blue, 30%);
+      border: none;
       i {
         color: white;
       }

@@ -43,6 +43,7 @@ const Header = (props) => {
             <div className="header-text-container">
                 <div className="flying-header-text">
                     <h1 className="name"> Hi, I'm <span className="tate" >{'{'}</span> Tate <span className="tate" >{'}'}</span>.</h1>
+                    <div className="mobile-image" alt="Tate Keller" />
                     <div className='header-text' >
                         <div className="header-typed">
                             <span ref={headerIntro} />
@@ -63,7 +64,7 @@ const Header = (props) => {
             </div>
 
             <header >
-                <img src={image} className="Main-image" alt="Tate Keller" />
+                <img src='/portfolio-pic3.jpeg' className="Main-image" alt="Tate Keller" />
             </header>
         </div >
 

@@ -10,7 +10,7 @@ const Contact = () => {
                 <h2><i className="fas fa-angle-down chevron" /><span className="bright-blue">.contact</span> {'{'} </h2>
                 <div className="bio">
 
-                    <h3>Does your website need a face-lift? Need help wrangling your database schema? Is your developer team one person short of joining the kickball league? Shoot me a message and we'll grab a socially-distant coffee over Zoom &#x1F44D;</h3>
+                    <p>Does your website need a face-lift? Need help wrangling your database schema? Is your developer team one person short of joining the kickball league? Shoot me a message and we'll grab a socially-distant coffee over Zoom &#x1F44D;</p>
 
 
                     <div className="contact-container">
