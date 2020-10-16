@@ -215,9 +215,10 @@ const Skills = () => {
                 onExited={() => setAnimating(false)}
                 key={category.id}
             >
-
-                {category.category}
-                {getSkillsForCategory(category.id)}
+                <div className='carousel-content'>
+                    {category.category}
+                    {getSkillsForCategory(category.id)}
+                </div>
 
             </CarouselItem>
         );
@@ -264,7 +265,7 @@ const Skills = () => {
             </div>
 
             {/* Carousel for responsive design */}
-            <div className='border-box section' style={{ display: 'block' }}>
+            <div className='skills-carousel border-box section' >
                 <Carousel
                     activeIndex={activeIndex}
                     next={next}

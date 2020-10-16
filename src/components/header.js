@@ -41,7 +41,7 @@ const Header = (props) => {
 
         <div className="header">
             <div className="header-text-container">
-                <div>
+                <div className="flying-header-text">
                     <h1 className="name"> Hi, I'm <span className="tate" >{'{'}</span> Tate <span className="tate" >{'}'}</span>.</h1>
                     <div className='header-text' >
                         <div className="header-typed">
