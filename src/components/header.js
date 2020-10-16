@@ -1,20 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
-import image from '../images/portfolio-pic3.jpeg';
-import { Link } from "react-router-dom";
-import * as All from '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 import Typed from 'typed.js';
 
 const Header = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => setIsOpen(!isOpen);
-
     const headerIntro = useRef();
 
     useEffect(() => {
 
-        var typed = new Typed(headerIntro.current, {
+        new Typed(headerIntro.current, {
             strings: [
                 "I'm a Minneapolis-based<br/>  <span class='red'>problem solver</span>,",
                 "I'm a Minneapolis-based<br/>  <span class='purple'>designer</span>,",
@@ -55,10 +49,10 @@ const Header = (props) => {
                 <div className="dropdown border-box">
                     <div className="dropbtn"><i className="fas fa-angle-down" /> <i className="fas fa-folder icon" /> Portfolio</div>
                     <div className="dropdown-content">
-                        <a onClick={() => scrollToId('about-me')}><i className="fab fa-python blue" /> About Me</a>
-                        <a onClick={() => scrollToId('skills')}><i className="fab fa-js-square yellow" /> Skills</a>
-                        <a onClick={() => scrollToId('projects')}><i className="fab fa-css3 purple" /> Projects</a>
-                        <a onClick={() => scrollToId('contact')}><i className="fas fa-code-branch red" /> Contact</a>
+                        <button onClick={() => scrollToId('about-me')}><i className="fab fa-python blue" /> About Me</button>
+                        <button onClick={() => scrollToId('skills')}><i className="fab fa-js-square yellow" /> Skills</button>
+                        <button onClick={() => scrollToId('projects')}><i className="fab fa-css3 purple" /> Projects</button>
+                        <button onClick={() => scrollToId('contact')}><i className="fas fa-code-branch red" /> Contact</button>
                     </div>
                 </div>
             </div>

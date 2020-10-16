@@ -1,10 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import {
     Carousel,
     CarouselItem,
     CarouselControl,
     CarouselIndicators,
-    CarouselCaption
 } from 'reactstrap';
 
 const skills = [
@@ -230,28 +229,28 @@ const Skills = () => {
                 <div className='skill-header'>
                     <div className='left-spacer'></div>
 
-                    <div className={`tab box-shadow ${selectedCategory == 'all' ? 'active-tab' : ''}`}
-                        style={{ zIndex: selectedCategory == 'all' ? 10 : 9 }}
+                    <div className={`tab box-shadow ${selectedCategory === 'all' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory === 'all' ? 10 : 9 }}
                         onClick={() => setSelectedCatagory('all')}>
                         <i className="fas fa-file-alt bright-blue" />&nbsp;Skills.txt
                     </div>
-                    <div className={`tab box-shadow ${selectedCategory == 'frontend' ? 'active-tab' : ''}`}
-                        style={{ zIndex: selectedCategory == 'frontend' ? 10 : 8 }}
+                    <div className={`tab box-shadow ${selectedCategory === 'frontend' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory === 'frontend' ? 10 : 8 }}
                         onClick={() => setSelectedCatagory('frontend')}>
                         <i className="fab fa-js-square yellow" />&nbsp;Fontend.js
                     </div>
-                    <div className={`tab box-shadow ${selectedCategory == 'backend' ? 'active-tab' : ''}`}
-                        style={{ zIndex: selectedCategory == 'backend' ? 10 : 7 }}
+                    <div className={`tab box-shadow ${selectedCategory === 'backend' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory === 'backend' ? 10 : 7 }}
                         onClick={() => setSelectedCatagory('backend')}>
                         <i className="fab fa-python blue" />&nbsp;Backend.py
                     </div>
-                    <div className={`tab box-shadow ${selectedCategory == 'design' ? 'active-tab' : ''}`}
-                        style={{ zIndex: selectedCategory == 'design' ? 10 : 6 }}
+                    <div className={`tab box-shadow ${selectedCategory === 'design' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory === 'design' ? 10 : 6 }}
                         onClick={() => setSelectedCatagory('design')}>
                         <i className="fab fa-css3 purple" />&nbsp;Design.css
                     </div>
-                    <div className={`tab box-shadow ${selectedCategory == 'misc' ? 'active-tab' : ''}`}
-                        style={{ zIndex: selectedCategory == 'misc' ? 10 : 5 }}
+                    <div className={`tab box-shadow ${selectedCategory === 'misc' ? 'active-tab' : ''}`}
+                        style={{ zIndex: selectedCategory === 'misc' ? 10 : 5 }}
                         onClick={() => setSelectedCatagory('misc')}>
                         <i className="fab fa-npm red" />&nbsp;Misc.json
                     </div>

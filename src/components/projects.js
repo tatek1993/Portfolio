@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import Canary from '../images/pig.gif';
 import Nav from '../images/nav.gif';
 import Gol from '../images/gol.gif';
@@ -67,7 +67,7 @@ const Projects = () => {
                         <div key={x.title} className="project-container">
                             <div className={`project box-shadow`}>
                                 <div className="project-header">
-                                    <img src={x.image} />
+                                    <img src={x.image} alt="screenshot" />
                                     <h2 className="project-title">
                                         <span className="yellow">[</span> {x.title} <span className="yellow">]</span >
                                     </h2>
