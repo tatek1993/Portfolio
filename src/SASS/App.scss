@@ -250,6 +250,10 @@ h3 {
   text-decoration: none;
   display: block;
   transition: background-color 300ms ease-out;
+  border: none;
+  background-color: initial;
+  width: 100%;
+  text-align: left;
 }
 
 /* Change color of dropdown links on hover */
