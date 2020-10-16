@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
+import image from '../images/portfolio-pic3.jpeg';
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 import Typed from 'typed.js';
@@ -58,7 +59,7 @@ const Header = (props) => {
             </div>
 
             <header >
-                <img src='/portfolio-pic3.jpeg' className="Main-image" alt="Tate Keller" />
+                <img src={image} className="Main-image" alt="Tate Keller" />
             </header>
         </div >
 
