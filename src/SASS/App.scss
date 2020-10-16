@@ -66,6 +66,10 @@ h3 {
     margin: 3rem 0;
     
   }
+  @media (max-width: 460px){
+    padding-left: 0px;
+
+  }
 }
 .about-text {
   align-items: center;
@@ -159,7 +163,7 @@ h3 {
 }
 
 .name {
-  font-size: calc(1.6rem + 1.3vw);
+  font-size: calc(1.4rem + 1.3vw);
   text-shadow: -.6rem .6rem #1b1d24,
                -.5rem .5rem #1b1d24,
                -.4rem .4rem #1b1d24,
@@ -190,6 +194,7 @@ h3 {
   min-width: 15em;
   @media (max-width: 1100px){
     text-align: center;
+    min-width: initial;
   }
 }
 
@@ -207,8 +212,8 @@ h3 {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, 'Consolas', 
   sans-serif;
-  font-size: 1.5rem;
-  
+  font-size: calc(1rem + 0.6vw);
+  white-space: nowrap;
 }
 
 .border-box {
@@ -235,7 +240,7 @@ h3 {
   // background-color: #282c34;
   margin: 0 0 5% 5%; 
   border-left: 2px solid $bar-grey;
-  font-size: 1.5rem;
+  font-size: calc(1rem + 0.5vw);
 }
 
 /* Links inside the dropdown */
@@ -391,6 +396,9 @@ h3 {
   padding: 20px;
   @media (max-width: 1200px) {
     width: 100%;
+  }
+  @media (max-width: 460px){
+    padding: 20px 0px;
   }
 }
 // this is being used to ensure each project is taking up 50% but still has room for padding
