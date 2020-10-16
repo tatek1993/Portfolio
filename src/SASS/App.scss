@@ -46,7 +46,8 @@ h3 {
 
 
 .section {
-  padding: 1rem 3rem;
+  padding: 1rem calc(1vw);
+  padding-left: calc(1rem + 3vw);
   margin: 3rem calc(10vw - 4rem);
   text-align: left;
   background-color: $med-grey; 
@@ -71,12 +72,14 @@ h3 {
 
 .bio {
   align-self: left;
-//   width: 70%;
-  padding: 0 5rem;
+  // padding: 0 5rem;
+  padding-left: calc(4vw);
   border-left: 2px solid $bar-grey;
-  // font-size: calc(10px + 1vmin);
   font-size: 18px;
   line-height: 2rem;
+  @media (max-width: 900px){
+    padding: 0 1rem;
+  }
 }
 
 // HEADER
@@ -244,7 +247,7 @@ h3 {
 
 .skill {
   padding: .7rem;
-  margin: 1.2rem;
+  margin: calc(.8vw + .3rem);
   border-radius: 10px;
   font-size: calc(8px + 1vh);
   white-space: nowrap;
@@ -331,7 +334,7 @@ h3 {
 }
 
 .carousel-content {
-  margin: 2rem 4rem;
+  margin: 2rem calc(8vw - 1rem);
   width: initial;
 }
 
@@ -357,6 +360,9 @@ h3 {
   flex-grow: 1;
   box-sizing: border-box;
   padding: 20px;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
 // this is being used to ensure each project is taking up 50% but still has room for padding
 
