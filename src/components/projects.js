@@ -29,7 +29,8 @@ const Projects = () => {
             role: "Front End | Designer",
             description: "A sample layout and animation mock-up for the marketing page of an investing/crowdfunding app.",
             tools: ['React', 'CSS', 'HTML', 'SVG Animation'],
-            github: "https://github.com/tatek1993/Canary-Animation-WIP"
+            github: "https://github.com/tatek1993/Canary-Animation-WIP",
+            link: "https://github.com/tatek1993/Canary-Animation-WIP"
         },
         {
             image: Nav,
@@ -37,7 +38,8 @@ const Projects = () => {
             role: "Front End | Designer",
             description: "A simple mock-up of an animated navigation bar, created for a self-directed collaborative project.",
             tools: ['JavaScript', 'CSS', 'HTML', 'SVG Animation'],
-            github: "https://github.com/tatek1993/nav-bubble-test"
+            github: "https://github.com/tatek1993/nav-bubble-test",
+            link: "https://github.com/tatek1993/nav-bubble-test"
         },
         {
             image: Gol,
@@ -45,7 +47,8 @@ const Projects = () => {
             role: "Front End",
             description: "An interactive in-browser version of Conway's Game Of Life made using HTML Canvas.",
             tools: ['React', 'CSS', 'HTML Canvas'],
-            github: "https://github.com/tatek1993/Game-Of-Life"
+            github: "https://github.com/tatek1993/Game-Of-Life",
+            link: "https://tkm-game-of-life.netlify.app/"
         },
         {
             image: Docs,
@@ -53,7 +56,8 @@ const Projects = () => {
             role: "Back End",
             description: "A Node.js and Express restful API for a web application which recommends medical cannabis strains to patients.",
             tools: ['Node.js', 'Express', 'Knex.js', 'SQLITE3'],
-            github: "https://github.com/tatek1993/medical-cabinet-back-end"
+            github: "https://github.com/tatek1993/medical-cabinet-back-end",
+            link: "https://github.com/tatek1993/medical-cabinet-back-end"
         },
     ]
 
@@ -66,12 +70,12 @@ const Projects = () => {
                     projects.map(x => (
                         <div key={x.title} className="project-container">
                             <div className={`project box-shadow`}>
-                                <div className="project-header">
+                                <a href={x.link} className="project-header">
                                     <img src={x.image} alt="screenshot" />
                                     <h2 className="project-title">
                                         <span className="yellow">[</span> {x.title} <span className="yellow">]</span >
                                     </h2>
-                                </div>
+                                </a>
                                 <div className="project-description">
                                     <div>
                                         <p style={{ fontWeight: 'bold' }}>{x.role}</p>
