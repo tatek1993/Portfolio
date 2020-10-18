@@ -41,9 +41,6 @@ const Contact = () => {
                 <h2>{'}'} </h2>
             </div>
 
-            {/* <ul class="copyright">
-                <li>&copy; Tate Keller Moctezuma. All rights reserved.</li>
-            </ul> */}
         </div>
 
 
