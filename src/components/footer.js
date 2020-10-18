@@ -5,9 +5,9 @@ const Footer = (props) => {
     return (
 
         <div className="footer">
-            <ul class="copyright">
-                <li>&copy; Tate Keller Moctezuma. All rights reserved.</li>
-            </ul>
+            <div class="copyright">
+                <p>&copy; Tate Keller Moctezuma. All rights reserved.</p>
+            </div>
         </div>
     );
 }

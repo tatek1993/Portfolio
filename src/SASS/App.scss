@@ -594,8 +594,10 @@ h3 {
 
 .copyright {
   list-style-type:none;
-  text-align: center;
   color: $light-grey;
+  white-space: nowrap;
+  font-size: calc(.6vw + .4rem);
+  text-align: center;
 }
 
 // COLOR CLASSES
