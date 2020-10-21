@@ -1,6 +1,12 @@
 # Tate's Portfolio Website
 
-Foobar is a Python library for dealing with word pluralization.
+A React application, created to showcase past development projects and skills related to web development.  
+
+## Tools
+- [create-react-app](https://reactjs.org/)
+- [Typed.js](https://github.com/mattboldt/typed.js/)
+- [reactstrap](https://reactstrap.github.io/)
+
 
 ## Installation
 
@@ -13,11 +19,6 @@ npm i
 ```
 npm start
 ```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
